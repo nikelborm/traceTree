@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "declaration": true,
+    // with "importsNotUsedAsValues": "error" dto imports used by validation decorators will silently fail.
+    // In our case we use swagger auto generation and when I import some DTO i provide it as type
+    // And then transpiler will automatically add meta-info decorators with specifying link to that dto class
+    // And we want to keep such "type information" in our production bundle, so I disabled back screaming about it
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "target": "ESNext",
+    "sourceMap": true,
+    "preserveWatchOutput": true,
+    "allowUnusedLabels": false,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "exactOptionalPropertyTypes": false, // this property is cool but sometimes it pisses me off
+    "allowJs": false,
+    "noErrorTruncation": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "noUncheckedIndexedAccess":true,
+    "useUnknownInCatchVariables": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict":true,
+    "noUnusedParameters": false,
+    "noImplicitUseStrict": false,
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "noStrictGenericChecks": false,
+    "plugins": [
+      {
+        "name": "typescript-strict-plugin",
+      }
+    ]
+  }
+}
