@@ -1,6 +1,6 @@
 TODO for me personally: check how it's different from `~/projects/tango-advisor/backend/src/tools/private/traceTree`
 
-There is also something similar exists for python
+There is also something similar exists for python: [Eliot](https://github.com/itamarst/eliot)
 
 This library allows devs to record smart traces of functions and beatifully render them. There is still a lot of work to be done, I hope I'll do it at some point. If you like this library, give it a star, it REALLY motivates me to work on this
 
