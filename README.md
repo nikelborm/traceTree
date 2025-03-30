@@ -1,4 +1,5 @@
 TODO for me personally: check how it's different from `~/projects/tango-advisor/backend/src/tools/private/traceTree`
+
 TODO: I recently discovered that special variable `arguments` of non anonymous functions (`function () {}`) has property callee that can be quite usefull in rendering traces. Maybe it would be cool to start using it in code somewhere
 
 ```ts
